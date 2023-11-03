@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple UI Designer</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="toolbar">
+            <h3>Form Designer</h3>
+            <div class="element" data-type="layout">
+                <i class="fas fa-th-large"></i> Layout
+            </div>
+            <div class="element" data-type="button">
+                <i class="fas fa-box"></i> Button
+            </div>
+            <div class="element" data-type="label">
+                <i class="fas fa-font"></i> Label
+            </div>
+        <div class="element" data-type="radio">
+                <i class="fas fa-dot-circle"></i>Radiobutton
+            </div>
+            <div class="element" data-type="checkbox">
+                <i class="fas fa-check-square"></i> Checkbox
+            </div>
+            <div class="element" data-type="image">
+                 <label for="image-upload">
+        <i class="fas fa-image"></i> Image
+    </label>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+            </div>
+            <div class="element" data-type="navigation">
+                <i class="fas fa-link"></i> Navigation
+            </div>
+            <div class="element" data-type="textbox">
+                <i class="fas fa-text-width"></i> Textbox
+            </div>
+            <div class="element" data-type="dropdown">
+                <i class="fas fa-caret-down"></i> Dropdown Menu
+            </div>
+            <div class="element" data-type="table">
+                <i class="fas fa-table"></i> Table
+            </div>
+        </div>
+    </div>
+            
+        <div class ="design-area" id="design-area">
+            <div class="buttons">
+            <button id="preview-button">Preview</button>
+            <button id="publish-button">Publish</button>
+            <div class="saved-design" id="saved-design"></div>
+            <div class="font-options" id="font-options">
+            <label for="font-color">Font Color:</label>
+            <input type="color" id="font-color">
+            <label for="font-style">Font Style:</label>
+            <select id="font-style">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+                <option value="underline">underline</option>
+            </select>
+            <label for="font-size">Font Size:</label>
+            <input type="number" id="font-size" min="8" max="48">
+        </div>
+        </div>
+         <div class="actions">
+               <button id="clear-button">Clear</button>
+                <button id="save-button">Save</button>
+            </div>
+    </div>
+    <div class="design-element draggable">
+    <div class="settings-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+
+
+    <script src="scripts1.js"></script>
+</html>
